@@ -22,7 +22,10 @@ while True:
 
         if guess == secret:
             print("You got it!")
+        elif guess >= secret:
+            print("Try to lower your guess...")
+            count += 1
         else:
-            print("Try again!")
+            print("Too low! Try higher one.")
             count += 1
     print("It took", count, "times")
